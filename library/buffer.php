@@ -121,7 +121,7 @@ class BufferApp {
     }
 
     function retrieve_access_token() {
-        $this->access_token = '1/8b5973c55bdb880119acc3fbba514e82';// $_SESSION['oauth']['buffer']['access_token'];
+        $this->access_token = $_SESSION['oauth']['buffer']['access_token']; // it will be like '1/8b5973c5567y8un78uacc3fb9ikh5e82'
 
         if ($this->access_token) {
             $this->ok = true;
